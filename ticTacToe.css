@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(139, 162, 162);
+}
+.game-board{
+    display: grid;
+    margin-top: 2rem;
+    height: 40rem;
+    width: 40rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(23, 105, 176);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+}
+
+.header {
+    padding-top: 24px;
+    font-style: italic;
+    justify-content:  center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.restart {
+    margin-top: 16px;
+    font-size: 18px;
+    padding: 2px;
+}
+.score-board {
+    margin: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(154, 58, 58);
+}
+#players {
+    text-align: center;
+    margin: 12px 0px 0px 0px;
+
+}
+
+.player-status {
+    margin: 6px;
+}
